@@ -1,20 +1,8 @@
-.link {
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.box {
-    margin: 0 auto;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primary-tekst-color);
+  background-color: var(--main-color-white);
+  letter-spacing: 0.03em;
+  margin: 0;
 }

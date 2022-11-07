@@ -11,6 +11,20 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -44,23 +58,6 @@ ol {
   padding-left: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
-address {
-  font-style: normal;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: var(--primary-tekst-color);
-  background-color: var(--main-color-white);
-  letter-spacing: 0.03em;
-  margin: 0;
-}
-
 .link {
   text-decoration: none;
 }
@@ -81,18 +78,36 @@ img {
   height: auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--primary-tekst-color);
+  background-color: var(--main-color-white);
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  padding-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  color: var(--title-tekst-color);
 }
 
 .container {
@@ -126,21 +141,6 @@ img {
 .btn__hero:hover, .btn__hero:focus {
   color: var(--main-color-white);
   background-color: var(--accent-active);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-title {
-  padding-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
-  flex-wrap: wrap;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  color: var(--title-tekst-color);
 }
 
 header {
@@ -503,16 +503,16 @@ textarea {
   text-transform: uppercase;
 }
 
-.features {
+.about {
   padding-bottom: 0;
 }
 
-.feature__list {
+.about__list {
   display: flex;
   gap: 30px;
 }
 
-.feature__icons {
+.about__icons {
   height: 120px;
   background-color: var(--background-color);
   margin-bottom: 30px;
@@ -521,7 +521,7 @@ textarea {
   justify-content: center;
 }
 
-.feature__title {
+.about__title {
   font-size: 14px;
   line-height: 0.875;
   color: var(--title-tekst-color);
@@ -529,7 +529,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.feature__text {
+.about__text {
   margin-bottom: 10px;
   max-width: 270px;
   line-height: 1.7142857143;
